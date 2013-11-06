@@ -1,0 +1,48 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- Style Menu -->
+    <!-- style Text Menu -->
+    <style name="TextMenu">
+        <item name="android:background">@drawable/bg_item_timeline</item>
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!-- style Text Menu Title -->
+    <style name="TextMenuTitle">
+        <item name="android:background">@color/menu_item</item>
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!-- style Text Item Menu Title -->
+    <style name="TextItemMenuTitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <!-- style Text Item Menu Title small -->
+    <style name="TextItemMenuTitleSmall">
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">70dp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+</resources>

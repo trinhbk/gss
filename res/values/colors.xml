@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!-- Menu activity -->
+    <color name="menu_item_on_pressed">#2D2D2D</color>
+    <color name="menu_item">#693D2D</color>
+    <color name="border_menu">#ECF0ED</color>
+    
+</resources>

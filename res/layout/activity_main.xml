@@ -1,0 +1,328 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- The main content view -->
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!-- The navigation drawer -->
+
+
+    <!--
+         <ListView
+        android:id="@+id/drawer_list"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#BE913F"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+    -->
+<ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:background="@drawable/bg_menu_repeat"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/ll_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/menu_item"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_manageUser"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/title_menu_height"
+                android:background="@color/menu_item" >
+
+                <ImageView
+                    android:id="@+id/iv_avatarProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/margin_imageview_item_menu"
+                    android:contentDescription="@string/img_desc_none"
+                    android:paddingLeft="-10dp"
+                    android:src="@drawable/icon_avatar" />
+
+                <TextView
+                    android:id="@+id/tv_nameProfile"
+                    style="@style/TextItemMenuTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_avatarProfile"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/name_text" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_menu" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_manageGrave"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/title_menu_height"
+                android:background="@color/menu_item" >
+
+                <ImageView
+                    android:id="@+id/iv_grave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/margin_imageview_item_menu"
+                    android:contentDescription="@string/img_desc_none"
+                    android:src="@drawable/icon_grave" />
+
+                <TextView
+                    android:id="@+id/tv_Grave"
+                    style="@style/TextItemMenuTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_grave"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/management_grave" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_menu" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_addGrave"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_menu_height"
+                android:background="@drawable/bg_item_timeline" >
+
+                <TextView
+                    android:id="@+id/tv_addGrave"
+                    style="@style/TextItemMenuTitleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/addGrave" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_menu" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_searchGrave"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_menu_height"
+                android:background="@drawable/bg_item_timeline" >
+
+                <TextView
+                    android:id="@+id/tv_searchGrave"
+                    style="@style/TextItemMenuTitleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/searchGrave" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_menu" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_manageRequest"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/title_menu_height"
+                android:background="@color/menu_item" >
+
+                <ImageView
+                    android:id="@+id/iv_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/margin_imageview_item_menu"
+                    android:contentDescription="@string/img_desc_none"
+                    android:src="@drawable/icon_grave" />
+
+                <TextView
+                    android:id="@+id/tv_request"
+                    style="@style/TextItemMenuTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_request"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/management_request" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_menu" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_listRequest"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_menu_height"
+                android:background="@drawable/bg_item_timeline" >
+
+                <TextView
+                    android:id="@+id/tv_listRequest"
+                    style="@style/TextItemMenuTitleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/listRequest" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_menu" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_searchRequest"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_menu_height"
+                android:background="@drawable/bg_item_timeline" >
+
+                <TextView
+                    android:id="@+id/tv_searchRequest"
+                    style="@style/TextItemMenuTitleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/searchRequest" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_menu" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_manageService"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/title_menu_height"
+                android:background="@color/menu_item" >
+
+                <ImageView
+                    android:id="@+id/iv_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/margin_imageview_item_menu"
+                    android:contentDescription="@string/img_desc_none"
+                    android:src="@drawable/icon_grave" />
+
+                <TextView
+                    android:id="@+id/tv_service"
+                    style="@style/TextItemMenuTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_service"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/management_request" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_menu" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_addService"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_menu_height"
+                android:background="@drawable/bg_item_timeline" >
+
+                <TextView
+                    android:id="@+id/tv_addService"
+                    style="@style/TextItemMenuTitleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/addService" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_menu" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_searchService"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_menu_height"
+                android:background="@drawable/bg_item_timeline" >
+
+                <TextView
+                    android:id="@+id/tv_searchService"
+                    style="@style/TextItemMenuTitleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/searchService" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_menu" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_help"
+                style="@style/TextMenu"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_menu_height"
+                android:gravity="center_vertical"
+                android:text="@string/help" />
+        </LinearLayout>
+    </ScrollView>
+ 
+
+</android.support.v4.widget.DrawerLayout>

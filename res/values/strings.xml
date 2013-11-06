@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Projector</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <!-- LOGIN -->
+    <string name="logo">LOGO</string>
+    <string name="et_login_username">Tên tài khoản</string>
+    <string name="et_login_password">Mật khẩu</string>
+    <string name="bt_login_login">Đăng nhập</string>
+    <string name="bt_login_register">Đăng ký</string>
+    <string name="bt_login_next">Bỏ qua</string>
+
+    <string-array name="menu_staff">
+        <item>Tin tức</item>
+        <item>Thông tin cá nhân</item>
+        <item>Grave management</item>
+        <item>Request management</item>
+        <item>Service management</item>
+        <item>Create MAP</item>
+    </string-array>
+
+    <!-- REGISTER -->
+    <string name="title_register">Register</string>
+    <string name="tv_register_name">Full Name: </string>
+    <string name="tv_register_password">Password: </string>
+    <string name="tv_register_re_password">Re.Password: </string>
+    <string name="tv_register_email">Email: </string>
+    <string name="tv_register_phone">Phone: </string>
+    <string name="tv_register_address">Address: </string>
+    <string name="bt_register_register">Register</string>
+    <!-- PROFILE -->
+    <string name="title_profile">Thông tin cá nhân</string>
+    <!-- MEMBER -->
+    <!-- STAFF -->
+    <string name="tv_profile_name"></string>
+    <string name="btn_profile_edit">Edit</string>
+    <string name="btn_profile_cancel">Cancel</string>
+    <string name="btn_profile_ok">Save</string>
+    <string name="hint_profile_address">Address</string>
+
+    <!-- GRAVE MANAGEMENT -->
+    <string-array name="function_grave">
+        <item>Add new grave</item>
+        <item>Search grave</item>
+    </string-array>
+    <!-- ADD GRAVE -->
+    <string name="title_add_grave">Grave</string>
+    <string name="tv__addgrave_fullname">Fullname:</string>
+    <string name="tv_addgrave_DOB">Date of birth:</string>
+    <string name="tv_addgrave_deathdate">Deathdate:</string>
+    <string name="tv_addgrave_hometown">Hometown:</string>
+    <string name="tv_addgrave_profile">Profile:</string>
+    <string name="tv_addgrave_gps">GPS:</string>
+    <string name="et_addgrave_fullname">Enter name</string>
+    <string name="et_addgrave_hometown">Enter hometown</string>
+    <string name="btn_datepicker">Get date</string>
+    <string name="et_addgrave_dd">date/month/year</string>
+    <string name="tv_addgrave_profile_link">Create profile</string>
+    <!-- SEARCH GRAVE -->
+    <string name="title_search_grave">Search Grave</string>
+    <string name="search_city">City: </string>
+
+    <string-array name="city_array">
+        <item>Hà Nội</item>
+        <item>Hồ Chí Minh</item>
+        <item>Quảng Bình</item>
+        <item>Đà Nẵng</item>
+    </string-array>
+    <string-array name="district_hn">
+        <item>Hai Bà Trưng</item>
+        <item>Cầu Giấy</item>
+        <item>Hoàn Kiếm</item>
+        <item>Tây Hồ</item>
+    </string-array>
+    <string-array name="district_hcm">
+        <item>Quận 1</item>
+        <item>Tân Bình</item>
+        <item>Quận 5</item>
+        <item>Quận 7</item>
+    </string-array>
+    <string-array name="district_qb">
+        <item>Bố Trạch</item>
+        <item>Đồng Hới</item>
+        <item>Lệ Thủy</item>
+        <item>Quảng Ninh</item>
+    </string-array>
+    <string-array name="district_dn">
+        <item>Thạch Hãn</item>
+        <item>Sơn Trà</item>
+        <item>Quỳ Lưu</item>
+    </string-array>
+    <string-array name="cemetery_bt">
+        <item>AAAA</item>
+        <item>BBBB</item>
+        <item>CCCC</item>
+        <item>DDDD</item>
+    </string-array>
+    <string-array name="cemetery_dh">
+        <item>EEEE</item>
+        <item>FFFF</item>
+        <item>GGGG</item>
+        <item>HHHH</item>
+    </string-array>
+    <string-array name="cemetery_lt">
+        <item>QQQQ</item>
+        <item>HHHH</item>
+        <item>EEEE</item>
+        <item>WWWW</item>
+    </string-array>
+    <string-array name="cemetery_qn">
+        <item>ZZZZ</item>
+        <item>XXXX</item>
+        <item>SSSS</item>
+        <item>TTTT</item>
+    </string-array>
+
+    <string name="search_district">District: </string>
+    <string name="search_cemetery">Cemetery: </string>
+    <string name="search_name">Fullname: </string>
+    <string name="search_hint_name">Enter name </string>
+    <string name="search_button_grave">Search</string>
+    <!-- UPDATE GRAVE -->
+    <string name="title_update_grave">Update Grave</string>
+    <!-- REQUEST MANAGEMENT -->
+    <string-array name="function_request">
+        <item>All request</item>
+        <item>My request</item>
+    </string-array>
+    <!-- SERVICE MANAGEMENT -->
+    <string-array name="function_service">
+        <item>Add new service</item>
+        <item>Search service</item>
+    </string-array>
+    <!-- MAP MANAGEMENT -->
+    <string name="ok">OK</string>
+    <string name="btn_map_save">Save</string>
+    <string name="btn_map_load">Load</string>
+    <string name="btn_map_picture">Shot</string>
+    <string name="cancel">Cancel</string>
+    <!-- MENU MAIN -->
+    <string name="name_text"></string>
+    <string name="management_grave">Quản lý mộ</string>
+    <string name="addGrave"> + Thêm mới</string>
+    <string name="searchGrave"> + Tìm kiếm</string>
+    <string name="management_cemetery">Quản lý nghĩa trang</string>
+    <string name="management_service">Quản lý dịch vụ</string>
+    <string name="addService"> + Thêm mới</string>
+    <string name="searchService"> + Tìm kiếm</string>
+    <string name="management_request">Quản lý yêu cầu</string>
+    <string name="listRequest"> + Danh sách</string>
+    <string name="searchRequest"> + Tìm kiếm</string>
+    <string name="img_desc_none">Hellosasas</string>
+    <string name="help">Help</string>
+    <string name="space_char">&#160;</string>
+
+</resources>
